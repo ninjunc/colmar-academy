@@ -9,15 +9,26 @@
   <body>
 
     <header>
-      <span class="pic-wrap">
+      <span class="pic-wrap logo-graphic">
         <img src="./img/ic-logo.svg" alt="Colmar Academy logo">
       </span>
       <span class="logo"><strong>COLMAR</strong><span>ACADEMY</span></span>
       <nav>
-        <span class="menu"><a href="#">On campus<img src="" class="menu-icon"></a></span>
-        <span class="menu"><a href="#">Online<img src="" class="menu-icon"></a></span>
-        <span class="menu"><a href="#">For companies</a></span>
-        <span class="menu"><a href="#">Sign in<img src="" class="menu-icon"></a></span>
+        <span class="menu">
+          <a href="#" class="menu-text">On campus</a>
+          <a href="#" class="menu-icon"><img src="./img/ic-on-campus.svg"></a>
+        </span>
+        <span class="menu">
+          <a href="#" class="menu-text">Online</a>
+          <a href="#" class="menu-icon"><img src="./img/ic-online.svg"></a>
+        </span>
+        <span class="menu">
+          <a href="#" class="menu-text">For companies</a>
+          <a href="#" class="menu-icon"><img src="./img/ic-login.svg"></a>
+        </span>
+        <span class="menu">
+          <a href="#" class="menu-text">Sign in</a>
+        </span>
       </nav>
     </header>
 
@@ -48,7 +59,8 @@
       <div class="right">
         <div class="feature">
           <span class="pic-wrap">
-            <img src="./img/information-orientation.jpg" alt="students walking on path">
+            <img src="./img/information-orientation.jpg" class="desktop" alt="students walking on path">
+            <img src="./img/information-orientation-mobile.jpg" class="mobile" alt="students walking on path">
           </span>
           <div>
             <h3>Orientation date</h3>
@@ -58,7 +70,8 @@
         </div>
         <div class="feature">
           <span class="pic-wrap">
-            <img src="./img/information-campus.jpg" alt="classroom with world map">
+            <img src="./img/information-campus.jpg" class="desktop" alt="classroom with world map">
+            <img src="./img/information-campus-mobile.jpg" class="mobile" alt="classroom with world map">
           </span>
           <div>
             <h3>Our campus</h3>
@@ -68,7 +81,8 @@
         </div>
         <div class="feature highlight">
           <span class="pic-wrap">
-            <img src="./img/information-guest-lecture.jpg" alt="">
+            <img src="./img/information-guest-lecture.jpg" class="desktop" alt="">
+            <img src="./img/information-guest-lecture-mobile.jpg" class="mobile" alt="">
           </span>
           <div>
             <h3>Our guest lecture</h3>
@@ -86,16 +100,20 @@
       <div class="course-row">
         <div class="course">
           <span class="pic-wrap"><img src="./img/course-software.jpg" alt="computer screen"></span>
-          <div class="">
-            <h3>Software engineering</h3>
+          <div class="course-title">
+            <h3>Software Engineering</h3>
+          </div>
+          <div class="course-text">
             <h4>Courses</h4>
             <p>Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </div>
         <div class="course">
           <span class="pic-wrap"><img src="./img/course-computer-art.jpg" alt="holding cell phone"></span>
-          <div class="">
+          <div class="course-title">
             <h3>Computer Art</h3>
+          </div>
+          <div class="course-text">
             <h4>Courses</h4>
             <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
           </div>
@@ -104,8 +122,10 @@
           <span class="pic-wrap">
             <img src="./img/course-design.jpg" alt="photographer holding camera">
           </span>
-          <div class="">
+          <div class="course-title">
             <h3>Design</h3>
+          </div>
+          <div class="course-text">
             <h4>Courses</h4>
             <p>User Experience Design, User Research, Visual Design</p>
           </div>
@@ -117,16 +137,20 @@
           <span class="pic-wrap">
             <img src="./img/course-data.jpg" alt="open laptop">
           </span>
-          <div class="">
+          <div class="course-title">
             <h3>Data</h3>
+          </div>
+          <div class="course-text">
             <h4>Courses</h4>
             <p>Data Science, Big Data, SQL, Data Visualization</p>
           </div>
         </div>
         <div class="course">
           <span class="pic-wrap"><img src="./img/course-business.jpg" alt="chess pieces"></span>
-          <div class="">
+          <div class="course-title">
             <h3>Business</h3>
+          </div>
+          <div class="course-text">
             <h4>Courses</h4>
             <p>Product Development, Business Development, Startup</p>
           </div>
@@ -135,8 +159,10 @@
           <span class="pic-wrap">
             <img src="./img/course-marketing.jpg" alt="person with smart watch">
           </span>
-          <div class="">
+          <div class="course-title">
             <h3>Marketing</h3>
+          </div>
+          <div class="course-text">
             <h4>Courses</h4>
             <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
@@ -146,30 +172,35 @@
     </section>
 
     <section id="exhibits">
-      <div class="left">
-        <span class="">
-          <video src="./vid/thesis.mp4" autoplay></video>
-        </span>
-        <h3>Reimagine urban</h3>
-        <p>&quot;Suspendisse tincidunt sapien ut lacus elementum, vel ultrices mauris euismod. Sed molestie euismod felis at hendrerit. Cras ultrices lacinia est, nec auctor mauris maximus in.&quot;</p>
-      </div>
-      <div class="right">
-        <div class="exhibit highlight">
-          <span class="pic-wrap">
-            <img src="./img/thesis-fisma.jpg" alt="students walking on path">
+      <h2>Thesis Exhibits</h2>
+      <div class="column-wrap">
+        <div class="left">
+          <span class="">
+            <video src="./vid/thesis.mp4" autoplay></video>
           </span>
-          <div>
-            <h3>Fisma: Design and</h3>
-            <p>Designer showcase of new prototype product</p>
-          </div>
+          <span class="vid-text">
+            <h3>Reimagine urban</h3>
+            <p>&quot;Suspendisse tincidunt sapien ut lacus elementum, vel ultrices mauris euismod. Sed molestie euismod felis at hendrerit. Cras ultrices lacinia est, nec auctor mauris maximus in.&quot;</p>
+          </span>
         </div>
-        <div class="exhibit">
-          <span class="pic-wrap">
-            <img src="./img/thesis-now-and-then.jpg" alt="classroom with world map">
-          </span>
-          <div>
-            <h3>Now and then</h3>
-            <p>Research study about New York</p>
+        <div class="right">
+          <div class="exhibit highlight">
+            <span class="pic-wrap">
+              <img src="./img/thesis-fisma.jpg" alt="students walking on path">
+            </span>
+            <div>
+              <h3>Fisma: Design and</h3>
+              <p>Designer showcase of new prototype product</p>
+            </div>
+          </div>
+          <div class="exhibit">
+            <span class="pic-wrap">
+              <img src="./img/thesis-now-and-then.jpg" alt="classroom with world map">
+            </span>
+            <div>
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
           </div>
         </div>
       </div>
