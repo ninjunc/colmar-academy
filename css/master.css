@@ -1,6 +1,43 @@
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+/* Global ////////////////////////////////////////////////////////////////// */
+
 body {
 margin: 0;
+font-family: "Raleway", sans-serif;
+color: #4a4a4a;
+font-size: .9em;
+}
+
+h1 {
+  font-size: 4em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 3em;
+  /*margin: 24px 0;*/
+}
+
+h3 {
+  font-size: 1.75em;
+  /*margin-bottom: 8px;*/
+}
+
+h4 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+p {
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .pic-wrap img {
@@ -8,47 +45,60 @@ margin: 0;
 }
 
 
-/* ///////////////////////////////////////////////////////////////////////// */
+/* Header section ////////////////////////////////////////////////////////// */
 
 header {
   display: flex;
   height: 64px;
   align-items: center;
   padding: 0 24px;
+  line-height: 1;
 }
 
 .logo {
   margin-right: auto;
 }
 
-nav {
-
-}
-
 nav span {
   margin-left: 16px;
 }
 
-/* ///////////////////////////////////////////////////////////////////////// */
+nav span a {
+  color: #4a4a4a;
+}
+
+/* Intro banner section //////////////////////////////////////////////////// */
 
 #banner {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 32px 24px;
+  background-color: #d8d8d8;
 }
 
 #banner .left {
   display: flex;
   margin-right: 24px;
-  width: 60%;
 }
 
 #banner .right {
   margin-left: 16px;
+  width: 40%;
 }
 
-/* ///////////////////////////////////////////////////////////////////////// */
+.btn {
+  display: block;
+  padding: 8px;
+  margin: 32px 0;
+  background-color: #4a4a4a;
+  width: 80%;
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
+}
+
+/* Featured article section //////////////////////////////////////////////// */
 
 #featured {
   display: flex;
@@ -66,16 +116,25 @@ nav span {
 }
 
 #featured .right {
-  min-width: 423px;
+  min-width: 453px;
 }
 
 .feature {
   display: flex;
-  padding: 16px 0 16px 16px;
+  padding: 16px;
+  align-content: center;
+}
+
+.feature h3 {
+  margin-bottom: 8px;
+}
+
+.feature p {
+  margin-bottom: 16px;
 }
 
 .feature:first-child {
-  padding: 0 0 16px 16px;
+  padding: 0 16px 16px 16px;
 }
 
 #featured .right .pic-wrap {
@@ -87,21 +146,25 @@ nav span {
   background-color: #d8d8d8;
 }
 
-/* ///////////////////////////////////////////////////////////////////////// */
+.credit {
+  font-weight: bold;
+  font-size: .85em;
+}
+
+/* Course link section ///////////////////////////////////////////////////// */
 
 #courses {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*justify-content: center;*/
   padding: 32px 88px;
+  background-color: #d8d8d8;
 }
 
 .course-row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /*max-width: 70%;*/
 }
 
 .course {
@@ -117,7 +180,7 @@ nav span {
 }
 
 
-/* ///////////////////////////////////////////////////////////////////////// */
+/* Thesis exhibit section ////////////////////////////////////////////////// */
 
 #exhibits {
   display: flex;
@@ -152,14 +215,19 @@ video {
 }
 
 
-/* ///////////////////////////////////////////////////////////////////////// */
+/* Footer section ////////////////////////////////////////////////////////// */
 
 footer {
   display: flex;
   padding: 16px 24px;
   border-top: 1px solid #d8d8d8;
+  font-size: .75em;
 }
 
 .copyright {
   margin-right: auto;
+}
+
+.footlink {
+  margin-left: 16px;
 }
