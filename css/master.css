@@ -1,0 +1,165 @@
+
+body {
+margin: 0;
+}
+
+.pic-wrap img {
+  max-width: 100%;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+header {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+nav {
+
+}
+
+nav span {
+  margin-left: 16px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 32px 24px;
+}
+
+#banner .left {
+  display: flex;
+  margin-right: 24px;
+  width: 60%;
+}
+
+#banner .right {
+  margin-left: 16px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+#featured {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 32px 0 24px 24px;
+}
+
+#featured .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 24px;
+  border-right: 1px solid #d8d8d8;
+}
+
+#featured .right {
+  min-width: 423px;
+}
+
+.feature {
+  display: flex;
+  padding: 16px 0 16px 16px;
+}
+
+.feature:first-child {
+  padding: 0 0 16px 16px;
+}
+
+#featured .right .pic-wrap {
+  max-width: 35%;
+  margin-right: 16px;
+}
+
+.highlight {
+  background-color: #d8d8d8;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+#courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+  padding: 32px 88px;
+}
+
+.course-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /*max-width: 70%;*/
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  background-color: white;
+  max-width: 385px;
+}
+
+.course div {
+  padding: 16px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+#exhibits {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 32px 0 24px 24px;
+}
+
+#exhibits .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 24px;
+}
+
+#exhibits .right {
+  min-width: 423px;
+}
+
+video {
+  max-width: 100%;
+}
+
+.exhibit {
+  display: flex;
+  padding: 16px 0 16px 16px;
+}
+
+#exhibits .right .pic-wrap {
+  max-width: 35%;
+  margin-right: 16px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+footer {
+  display: flex;
+  padding: 16px 24px;
+  border-top: 1px solid #d8d8d8;
+}
+
+.copyright {
+  margin-right: auto;
+}
